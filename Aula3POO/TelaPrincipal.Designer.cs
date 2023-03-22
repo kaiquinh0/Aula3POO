@@ -32,7 +32,7 @@
             this.btnProduto = new System.Windows.Forms.Button();
             this.btnFornecedor = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
-            this.plPrincipal = new System.Windows.Forms.Panel();
+            this.pnlTela = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@
             this.btnProduto.TabIndex = 2;
             this.btnProduto.Text = "Produto";
             this.btnProduto.UseVisualStyleBackColor = true;
+            this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // btnFornecedor
             // 
@@ -77,19 +78,19 @@
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
-            // plPrincipal
+            // pnlTela
             // 
-            this.plPrincipal.Location = new System.Drawing.Point(131, 13);
-            this.plPrincipal.Name = "plPrincipal";
-            this.plPrincipal.Size = new System.Drawing.Size(657, 432);
-            this.plPrincipal.TabIndex = 1;
+            this.pnlTela.Location = new System.Drawing.Point(131, 13);
+            this.pnlTela.Name = "pnlTela";
+            this.pnlTela.Size = new System.Drawing.Size(657, 432);
+            this.pnlTela.TabIndex = 1;
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.plPrincipal);
+            this.Controls.Add(this.pnlTela);
             this.Controls.Add(this.panel1);
             this.Name = "TelaPrincipal";
             this.Text = "Form1";
@@ -104,7 +105,7 @@
         private System.Windows.Forms.Button btnProduto;
         private System.Windows.Forms.Button btnFornecedor;
         private System.Windows.Forms.Button btnCliente;
-        private System.Windows.Forms.Panel plPrincipal;
+        private System.Windows.Forms.Panel pnlTela;
     }
 }
 
