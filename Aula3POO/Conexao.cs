@@ -18,7 +18,7 @@ namespace Aula3POO
 
         static public string strConn = $"server={server};" +
             $"database={database}; User Id={usuario};" +
-            $"password={senha}";
+            $"password={senha};";
 
         MySqlConnection cn;
 
